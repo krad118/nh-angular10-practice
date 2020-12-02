@@ -12,6 +12,7 @@ export class AppComponent {
   classes = 'aClassDemo';
   buttonTitle = 'Eliminar imagen';
   displayNone: string;
+  directives: string[] = ['*ngIf', '*ngFor', '*ngSwitch', '*ngSwitchCase', '*ngModel', '*ng-template'];
 
   delete(): void {
     this.displayNone = this.displayNone ? '' : 'none';
