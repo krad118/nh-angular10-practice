@@ -37,4 +37,17 @@
   </p>
 </div>
 
+<h2>Aprendiendo sobre directivas</h2>
+<div id="practiceNgIf">
+  <p *ngIf="1 === 1">
+    <span *ngIf="title == 'developteca'">Directiva estructural NgIf (este titulo de muestra cuando title == 'developteca')</span>
+  </p>
+</div>
+
+<div id="practiceNgFor">
+  <ul>
+    <li *ngFor="let directive of directives"> {{ directive }}</li>
+  </ul>
+</div>
+
 <router-outlet></router-outlet>
