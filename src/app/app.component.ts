@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'developteca';
+  imageUrl = 'https://via.placeholder.com/150';
+  isUnchanged = true;
+  classes = 'aClassDemo';
+  buttonTitle = 'Eliminar imagen';
+  displayNone: string;
+
+  delete(): void {
+    this.displayNone = this.displayNone ? '' : 'none';
+  }
 }
