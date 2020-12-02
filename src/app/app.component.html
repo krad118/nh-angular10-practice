@@ -50,4 +50,8 @@
   </ul>
 </div>
 
+<h2>Componente personalizada</h2>
+<div id="practiceComponent">
+  <app-book *ngFor="let book of books" [book]="book"></app-book>
+</div>
 <router-outlet></router-outlet>
